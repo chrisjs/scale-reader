@@ -59,7 +59,7 @@ class ScaleReader:
 
     def __to_json(self, scale_records):
         json_data = {}
-        json_data['timestamp'] = int(time.time()) 
+        json_data['timestamp'] = format(float(time.time()), '.1f')
 
         for scale_record in scale_records:
             scale_id = scale_record.scale_id
