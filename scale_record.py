@@ -5,6 +5,8 @@ class ScaleRecord:
         self.low_byte = low_byte
 
     def getWeight(self):
-        weight = ((ord(chr(self.high_byte)) * 256 + ord(chr(self.low_byte))) / 10.0) / 5
+        weight = ((ord(chr(self.high_byte)) * 256 + ord(chr(self.low_byte))) / 10.0)
+        weight = weight / 2.7
+
         return format(weight, '.1f')
 
