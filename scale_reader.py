@@ -75,10 +75,14 @@ class ScaleReader:
             print msg
 
 if __name__ == '__main__':
-    try:
-        scale_reader = ScaleReader()
-        scale_reader.connect()
-        scale_reader.read_as_json()
-    finally:
-        scale_reader.close()
+    while True:
+        try:
+            scale_reader = ScaleReader()
+            scale_reader.connect()
+            scale_reader.read_as_json()
+        except:
+            #scale_reader.close()
+            pass
+        print "sleep..."
+        time.sleep(5)
 
