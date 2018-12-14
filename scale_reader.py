@@ -63,7 +63,7 @@ class ScaleReader:
 
         for scale_record in scale_records:
             scale_id = scale_record.scale_id
-            json_data[scale_id] ={}
+            json_data[scale_id] = {}
             json_data[scale_id]['high_byte'] = scale_record.high_byte 
             json_data[scale_id]['low_byte'] = scale_record.low_byte 
             json_data[scale_id]['weight'] = scale_record.getWeight()
