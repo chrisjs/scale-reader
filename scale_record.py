@@ -1,8 +1,8 @@
 class ScaleRecord:
-    scales = {1 : 2.69,
-              2 : 2.69,
-              3 : 2.52,
-              4 : 2.71}
+    scales = {1 : 5.15,
+              2 : 4.88,
+              3 : 5.28,
+              4 : 4.88}
 
     def __init__(self, scale_id, high_byte, low_byte):
         self.scale_id = scale_id
